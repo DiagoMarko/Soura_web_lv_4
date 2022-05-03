@@ -1,0 +1,84 @@
+.orest {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.common {
+  padding-bottom: 1px;
+}
+.backdrop {
+  flex: 1;
+  height: 20px;
+  box-shadow: 1px 1px 5px rgba(5, 5, 5, 0.1), -1px -1px 5px rgba(5, 5, 5, 0.1);
+  padding: 10px;
+  background-color: var(--white_Color);
+}
+.backdrop p {
+  line-height: 27px;
+  color: var(--link_Color);
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.backdrop .drop-down-show {
+  height: 81px;
+}
+.backdrop .qustion {
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+.backdrop .qustion::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #f4813f;
+  font-weight: 700;
+  color: var(--white_Color);
+  cursor: pointer;
+}
+.backdrop .munise::after {
+  content: "-";
+}
+.img-qusetions {
+  width: 400px;
+}
+.img-qusetions img {
+  width: 100%;
+}
+.common {
+  background-image: linear-gradient(
+    60deg,
+    rgba(233, 144, 93, 0.637) 30%,
+    rgba(235, 154, 107, 0.2) 50%
+  );
+}
+
+/*------Smalls-Media-Strat-----------------*/
+@media (min-width: 200px) and (max-width: 992px) {
+  .common .cont {
+    flex-direction: column;
+  }
+}
+@media (min-width: 200px) and (max-width: 450px) {
+  .img-qusetions {
+    display: none;
+  }
+  .orest {
+    width: 100%;
+  }
+  .backdrop {
+    padding: 15px;
+  }
+}
+
+/*------Smalls-Media-End-----------------*/

@@ -1,0 +1,27 @@
+[
+    {
+        "mass":"hallo",
+        "anser":"Hallo"
+    },
+    {
+        "mass":"hi",
+        "anser":"Hi, How Can I Help You ?"
+    },
+    {
+        "mass":"i need some inforamtion ",
+        "anser":"Okey We will Conact With You Soon"
+    },
+    {
+        "mass":"i need some details",
+        "anser":"Okey You  Can Contact With Us At example@ex.com or Phone Nummber +03019386521e"
+    },
+    {
+        "mass":"i need some details",
+        "anser":"Okey You  Can Contact With Us At example@ex.com or Phone Nummber +03019386521e"
+    },
+    {
+        "mass":"i need some details",
+        "anser":"Okey You  Can Contact With Us At example@ex.com or Phone Nummber +03019386521e"
+    }
+
+]

@@ -1,0 +1,46 @@
+.achive .cont {
+  justify-content: center;
+  width: 85%;
+  background: linear-gradient(145deg, #f4813f 0%, #f1556a 100%);
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.achive .cont::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 1px 1px 10px var(--dark_Color);
+  border-top: 30px solid #fff;
+  border-left: 30px solid #fff;
+  border-bottom: 30px solid rgb(236, 236, 236);
+  border-right: 30px solid rgb(231, 230, 230);
+}
+.kokes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-gap: 20px;
+  color: var(--white_Color);
+  flex: 1;
+}
+.kokes i {
+  font-size: 3.3rem;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--light_Color);
+}
+.kokes h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.kokes span {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 200px) and (max-width: 992px) {
+  .achive .cont {
+    flex-direction: column;
+  }
+}

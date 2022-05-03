@@ -1,0 +1,227 @@
+/*----Cards-Start-------*/
+.card_1 {
+  text-align: center;
+  width: 33%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-gap: 20px;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(5, 5, 5, 0.1), -2px -2px 5px rgba(5, 5, 5, 0.1);
+  position: relative;
+}
+.card_1:after {
+  content: "01";
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #f4813f;
+  opacity: 0.2;
+}
+.cont .card_1:nth-child(2)::after {
+  content: "02";
+}
+.cont .card_1:nth-child(3)::after {
+  content: "03";
+}
+.card_1 h2 {
+  font-size: 1.3rem;
+}
+.card_1 p {
+  color: var(--link_Color);
+  line-height: 27px;
+  font-size: 1rem;
+}
+.icon_ic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #f4813f 0%, #f1556a 100%);
+  animation: animateAnaiter 3s infinite linear;
+}
+@keyframes animateAnaiter {
+  0% {
+    box-shadow: 1px 1px 1px 0px rgba(244, 129, 63, 0.2),
+      -1px -1px 5px rgba(244, 129, 63, 0.2);
+  }
+  50% {
+    box-shadow: 1px 1px 1px 12px rgba(244, 129, 63, 0.2),
+      -1px -1px 5px rgba(244, 129, 63, 0.2);
+  }
+  100% {
+    box-shadow: 1px 1px 1px 0px rgba(244, 129, 63, 0.2),
+      -1px -1px 5px rgba(244, 129, 63, 0.2);
+  }
+}
+.icon_ic i {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--white_Color);
+}
+
+/*----Mediam-Media-Start-------*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cards .cont {
+    width: 90%;
+  }
+  .card_1 {
+    padding: 40px;
+  }
+}
+/*----Mediam-Media-End-------*/
+
+/*----Small-Media-Start-------*/
+@media (min-width: 200px) and (max-width: 991px) {
+  .cards .cont {
+    width: 70%;
+    flex-direction: column;
+  }
+  .card_1 {
+    width: 100%;
+    padding: 10px;
+  }
+}
+/*----Small-Media-End-------*/
+
+/*----Cards-End-------*/
+.tab {
+  background-image: url("../images/CARDS/ipad.png");
+  width: 50%;
+  height: 520px;
+  background: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.show-img {
+  position: absolute;
+  width: 62%;
+  height: 85%;
+  top: 7.2%;
+  left: 2.5%;
+  background-color: #7a7a7a;
+  background-image: url("../images/CARDS/preview.jpg");
+  background-size: cover;
+  transition: all 1s;
+}
+/*-----Animation-Start--*/
+.move {
+  animation: move 10s ease-in-out forwards;
+}
+@keyframes move {
+  0% {
+    background-position-y: 0%;
+  }
+  10% {
+    background-position-y: 10%;
+  }
+  20% {
+    background-position-y: 20%;
+  }
+  30% {
+    background-position-y: 30%;
+  }
+  40% {
+    background-position-y: 40%;
+  }
+  50% {
+    background-position-y: 50%;
+  }
+  60% {
+    background-position-y: 60%;
+  }
+  70% {
+    background-position-y: 70%;
+  }
+  80% {
+    background-position-y: 80%;
+  }
+  90% {
+    background-position-y: 90%;
+  }
+  100% {
+    background-position-y: 100%;
+  }
+}
+/*-----Animation-End--*/
+.preview {
+  height: 100vh;
+  background-image: url("../images/CARDS/left-bg-decor.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.preview .cont {
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100%;
+}
+.content-preview {
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+.content-preview > h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.content-preview h2 {
+  display: inline;
+  font-size: 1rem;
+}
+.content-preview p {
+  padding-top: 10px;
+  line-height: 27px;
+}
+.preview-card-1 {
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 30px;
+  background-color: var(--white_Color);
+  box-shadow: 1px 1px 5px rgba(5, 5, 5, 0.1), -1px -1px 5px rgba(5, 5, 5, 0.1);
+  position: relative;
+}
+.preview-card-1 i {
+  font-size: 2.5rem;
+  position: absolute;
+  color: var(--link_Active_Color);
+}
+.preview-card-1 .title {
+  padding-left: 70px;
+}
+.preview-card-1 .title p {
+  color: var(--link_Color);
+}
+.content-preview .active {
+  background: linear-gradient(145deg, #f4813f 0%, #f1556a 100%);
+  color: var(--white_Color);
+}
+.content-preview .active p {
+  color: var(--white_Color);
+}
+.content-preview .active i {
+  color: var(--white_Color);
+}
+/*----Small-Media-Start-------*/
+@media (min-width: 200px) and (max-width: 1240px) {
+  .preview .cont {
+    flex-direction: column;
+  }
+  .content-preview {
+    width: 100%;
+  }
+  .tab {
+    display: none;
+  }
+}
+/*----Small-Media-End-------*/

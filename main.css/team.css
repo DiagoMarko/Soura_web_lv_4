@@ -1,0 +1,123 @@
+.team .cont {
+  width: 90%;
+}
+.sara_card {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-gap: 10px;
+  height: 400px;
+  position: relative;
+  box-shadow: 1px 1px 5px rgba(5, 5, 5, 0.1), -1px -1px 5px rgba(5, 5, 5, 0.1);
+  overflow: hidden;
+}
+.sara_card::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 35%;
+  background: linear-gradient(145deg, #f4813f 0%, #f1556a 100%);
+  top: 0;
+  left: -10%;
+  z-index: -1;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotatex(90deg);
+  transition: all 0.6s ease;
+}
+.sara_card span {
+  display: inline-block;
+  width: 40%;
+  height: 1.3px;
+  background-color: var(--link_Active_Color);
+  position: relative;
+  transition: all 0.3s ease;
+}
+.sara_card span::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: var(--white_Color);
+  border-radius: 50%;
+  border: 3.5px solid var(--link_Active_Color);
+  outline: 6px solid var(--white_Color);
+}
+.sara_card:hover span {
+  width: 50%;
+}
+.sara_card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+.img-team {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.name {
+  padding-top: 10px;
+  color: var(--link_Color);
+}
+.social {
+  position: absolute;
+  display: flex;
+  grid-gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  color: var(--white_Color);
+  background: linear-gradient(145deg, #f4813f 0%, #f1556a 100%);
+  bottom: -10%;
+  transition: all 0.3s ease;
+}
+.social i {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.social i:hover {
+  background-color: var(--white_Color);
+  color: var(--link_Active_Color);
+}
+.sara_card:hover .social {
+  bottom: 0;
+}
+.team-img {
+  transition: all 0.6s ease;
+}
+.sara_card:hover .team-img {
+  transform: scale(0.8, 0.8);
+}
+.sara_card:hover .img-team {
+  background-color: rgb(240, 240, 240);
+}
+.sara_card:hover::after {
+  transform: rotateX(0);
+}
+
+/*------Smalls-Media-Strat-----------------*/
+@media (min-width: 200px) and (max-width: 992px) {
+  .team .cont {
+    flex-direction: column;
+  }
+  .sara_card {
+    width: 60%;
+  }
+}
+@media (min-width: 200px) and (max-width: 410px) {
+  .sara_card {
+    width: 90%;
+  }
+}
+/*------Smalls-Media-End-----------------*/

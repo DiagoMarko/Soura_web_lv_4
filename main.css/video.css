@@ -1,0 +1,138 @@
+.vedio {
+  margin-top: 100px;
+  width: 100%;
+  height: 350px;
+  background-image: url("../images/CARDS/video-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.vedio::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(145deg, #f4813f 0%, #f1556a 100%);
+  z-index: -1;
+  opacity: 0.8;
+}
+.vedio i {
+  font-size: 2.5rem;
+  padding-left: 5px;
+  color: var(--link_Active_Color);
+  line-height: 70px;
+}
+.vid-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--white_Color);
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.title-vedio {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  line-height: 27px;
+  color: var(--white_Color);
+  z-index: 1;
+}
+.title-vedio p {
+  font-size: 1.3rem;
+}
+.title-vedio span {
+  padding-left: 80px;
+  font-size: 1rem;
+}
+.vedio .vid-icon::after,
+.vedio .vid-icon::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid var(--white_Color);
+  opacity: 1;
+  backface-visibility: hidden;
+  animation: effect 1.5s linear infinite;
+}
+.vedio .vid-icon::after {
+  animation-delay: 0.5s;
+}
+
+@keyframes effect {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+.vd-mate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.vd-mate iframe {
+  width: 95%;
+  margin: auto;
+  height: 500px;
+  border: 40px solid #fc8038;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.vd-mate span {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: var(--white_Color);
+  cursor: pointer;
+}
+.vd-mate-show {
+  display: flex;
+}
+@media (min-width: 200px) and (max-width: 375px) {
+  .vedio {
+    height: 460px;
+    margin-top: 300px;
+  }
+  .title-vedio p {
+    font-size: 1rem;
+  }
+  .title-vedio span {
+    padding-left: 0px;
+  }
+  .break {
+    display: block !important;
+  }
+}

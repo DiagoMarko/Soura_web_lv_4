@@ -1,0 +1,135 @@
+/* ------Header-Style-Start------- */
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  transition: 0.4s ease-out;
+  z-index: 100;
+  top: -10%;
+}
+nav {
+  position: sticky;
+  top: 0%;
+  width: 90%;
+  margin: auto;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+nav ul {
+  display: flex;
+  height: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  width: 45%;
+}
+nav ul li a {
+  padding: 0 20px;
+  font-size: 14px;
+  color: var(--link_Color);
+  font-weight: 600;
+  transition: 0.4s;
+}
+nav ul li a:hover {
+  color: var(--link_Active_Color);
+}
+nav ul li:nth-child(1) a {
+  color: var(--link_Active_Color);
+}
+.logo {
+  width: 30%;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+nav .show {
+  display: none;
+}
+.add {
+  position: fixed;
+  top: 0;
+  background-color: var(--white_Color);
+  box-shadow: 10px 0px 20px rgba(1, 1, 1, 0.1);
+}
+/*------Large-Media-Start-------*/
+@media (min-width: 993px) and (max-width: 1240px) {
+  nav {
+    width: 95%;
+  }
+  nav ul {
+    width: 53%;
+  }
+}
+/*------Large-Media-End-------*/
+
+/*------Small-Media-Start-------*/
+@media (min-width: 200px) and (max-width: 993px) {
+  header {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(145deg, #f4813f 0%, #f1556a 100%);
+    z-index: 100;
+    top: 0%;
+  }
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+  .logo {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    color: var(--white_Color);
+  }
+  nav ul {
+    width: 60%;
+    height: 100% !important;
+    height: auto;
+    position: fixed;
+    top: 0%;
+    left: -100%;
+    flex-direction: column;
+    grid-gap: 10px;
+    background-color: var(--light_Color);
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  nav ul li {
+    border-bottom: 0.1px solid var(--line_Color);
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+  nav ul li a {
+    color: var(--dark_Color);
+  }
+  nav .show {
+    position: relative;
+    display: block;
+    padding: 30px;
+  }
+  nav .show i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+    color: var(--white_Color);
+    cursor: pointer;
+  }
+  nav .show i:nth-child(2) {
+    display: none;
+  }
+  .show-list {
+    left: 0%;
+  }
+}
+/*------Small-Media-End-------*/
+
+/* ------Header-Style-End------- */
