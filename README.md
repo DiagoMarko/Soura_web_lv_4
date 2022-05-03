@@ -1,6 +1,7 @@
 <h1>Soura App Webview</h1>
 <p> I made this website to improve my skills at design</p>
-<h2>Ventures</h2>
+<h3>Note: No framwork with native code</h3>
+<h2>Vetures</h2>
 <ul>
     <li>Modern design</li>
     <li>Responsive at all deveices</li>
