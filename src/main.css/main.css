@@ -2,7 +2,7 @@
 .main {
   height: 100vh;
   max-height: 800px;
-  background-image: url("../images/main-img/banner-bg.png");
+  background-image: url("../../images/main-img/banner-bg.png");
   background-position: 100% 50%;
   background-repeat: no-repeat;
   background-size: cover;
